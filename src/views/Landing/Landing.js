@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../../components/Button/Button'
 import paperAirplane from '../../assets/images/paper-airplane.svg'
 import iconPaper from '../../assets/images/icon.svg'
 import'./Landing.scss'
@@ -15,6 +16,7 @@ export const Landing = () => {
           <h2>Transforming ideas</h2>
           <h2>into great apps!</h2>
           <h2 class='secondary-font'>Code 100% made in Mexico</h2>
+          <Button />
         </div>
         <div class="lading-page__paper-ariplane">
           <img src={paperAirplane} class="paper-ariplane"/>
