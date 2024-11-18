@@ -8,19 +8,27 @@
 .landing-page {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   box-sizing: border-box;
   position: relative;
   flex-direction: column;
-  padding: 40px 70px;
+  padding: 30px 40px;
   .header {
     display: flex;
     & > img {
       width: 50px;
       margin-right: 5px;
     }
+    & > p {
+      margin: 0;
+    }
   }
   & > .landing-page__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
+    height: 100%;
     & > .lading-page__paper-ariplane {
       position: relative;
       animation-duration: 1s;
@@ -39,7 +47,7 @@
       & > .paper-ariplane {
         position: absolute;
         top: -100px;
-        left: 100px;
+        left: 130px;
         width: 50vw;
         animation-duration: 1s;
         animation-name: airplane-icon;
@@ -85,7 +93,7 @@
       & > h2 {
         margin: 0px;
         white-space-collapse: collapse;
-        font-size: 5vw;
+        font-size: 7vw;
         text-wrap: nowrap;
       }
 
@@ -107,13 +115,15 @@
     padding: 40px 70px;
     align-items: center;
     display: block;
-
+    height: min-content;
     & > .landing-page__content {
       display: flex;
-      align-items: center;
+      flex-direction: row;
+      justify-content: left;
+      margin: 120px 0;
       & > .lading-page__paper-ariplane {
         position: relative;
-        width: 300px;
+        width: 400px;
         height: 400px;
 
         & > .paper-ariplane {

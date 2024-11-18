@@ -1,0 +1,7 @@
+@use '../../assets/styles/utilities';
+
+.categories {
+  background-image: linear-gradient(utilities.$purple, utilities.$blue);
+  width: 100%;
+  height: 400px;
+}
