@@ -8,7 +8,7 @@
 .landing-page {
   display: flex;
   width: 100vw;
-  height: 90vh;
+  height: 90vmax;
   box-sizing: border-box;
   position: relative;
   flex-direction: column;
@@ -16,11 +16,13 @@
   .header {
     display: flex;
     & > img {
-      width: 50px;
+      width: 60px;
       margin-right: 5px;
     }
     & > p {
       margin: 0;
+      font-size: 26px;
+      line-height: 26px;
     }
   }
   & > .landing-page__content {
@@ -47,12 +49,10 @@
       & > .paper-ariplane {
         position: absolute;
         top: -100px;
-        left: 130px;
+        left: 150px;
         width: 50vw;
-        animation-duration: 1s;
-        animation-name: airplane-icon;
+        animation: airplane-icon 1s linear;
         animation-iteration-count: 1;
-        animation-timing-function: linear;
         animation-fill-mode: forwards;
 
         @keyframes airplane-icon {
@@ -73,10 +73,8 @@
     }
 
     & > .lading-page__text {
-      animation-duration: 1s;
-      animation-name: title-text;
+      animation: title-text 1s linear;
       animation-iteration-count: 1;
-      animation-timing-function: linear;
       animation-fill-mode: forwards;
       @keyframes title-text {
         0% {
@@ -110,39 +108,64 @@
     line-height: 22px;
     font-size: 24px;
   }
+
   @media (min-width: utilities.$layout-breakpoint-desktop) {
     font-size: 5vw;
     padding: 40px 70px;
-    align-items: center;
-    display: block;
     height: min-content;
+    display: flex;
     & > .landing-page__content {
       display: flex;
       flex-direction: row;
-      justify-content: left;
-      margin: 120px 0;
+      align-self: center;
+      margin: 140px 0;
+      max-width: 950px;
+      width: 100%;
+      justify-content: flex-start;
+
       & > .lading-page__paper-ariplane {
         position: relative;
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
 
         & > .paper-ariplane {
           position: absolute;
-          left: 0px;
-          top: 2px;
-          width: 100%;
+          left: -40px;
+          top: -80px;
+          width: 250px;
         }
       }
       & > .lading-page__text {
+        max-width: 600px;
+        width: 100%;
         & > h2 {
           margin: 0px;
           white-space-collapse: collapse;
-          font-size: 5vw;
+          font-size: 55px;
           text-wrap: nowrap;
         }
         & > .secondary-font {
           margin: 10px 0px;
-          font-size: 5vw;
+          font-size: 65px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: utilities.$layout-breakpoint-desktop) and (max-width: utilities.$layout-breakpoint-medium) {
+    & > .landing-page__content {
+      max-width: 850px;
+      & > .lading-page__paper-ariplane > .paper-ariplane {
+        width: 200px;
+        top: -55px;
+      }
+      & > .lading-page__text {
+        max-width: 500px;
+        & > h2 {
+          font-size: 45px;
+        }
+        & > .secondary-font {
+          font-size: 45px;
         }
       }
     }
