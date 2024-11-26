@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";import "./Categories.scss";
 import { Card } from '../../components/Card/Card'
+import { Modal } from '../../components/Modal/Modal'
 import companies from '../../assets/images/companies.svg'
 import techStack from '../../assets/images/tech-stack.svg'
 import contact from '../../assets/images/contact.svg'
@@ -58,6 +59,12 @@ export const Categories = () => {
     })
   }
 
+  const showModalInfo = () => {
+    return topCategories.map((category, index) => {
+      return (<Modal name={category.name} id={index}/>)
+    })
+  }
+
   return (
     <div class="categories">
       <div class="title">
@@ -68,6 +75,8 @@ export const Categories = () => {
           {showCategories()}
         </div>
       </div>
+      <div class="overlap" id="categories"/>
+      {showModalInfo()}
     </div>
   )
 }

@@ -1,0 +1,46 @@
+@use '../../assets/styles/utilities';
+
+.modal {
+  display: none;
+}
+
+.modal-open {
+  background-color: utilities.$white;
+  width: calc(100% - 50px);
+  height: 80%;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  display: block;
+  animation: open-modal 500ms linear;
+  animation-fill-mode: forwards;
+
+  & > .modal-header {
+    display: flex;
+    justify-content: space-between;
+    & > a {
+      cursor: pointer;
+      & > img {
+        rotate: 45deg;
+      }
+    }
+  }
+}
+
+@keyframes open-modal {
+  0% {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
