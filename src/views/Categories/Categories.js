@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from "react";import "./Categories.scss";
+import React, { useRef, useEffect, useState } from "react";import "./Categories.scss";
 import { Card } from '../../components/Card/Card'
+import { Modal } from '../../components/Modal/Modal'
 import companies from '../../assets/images/companies.svg'
 import techStack from '../../assets/images/tech-stack.svg'
 import contact from '../../assets/images/contact.svg'
@@ -10,6 +11,8 @@ import reviews from '../../assets/images/reviews.svg'
 export const Categories = () => {
   const elementCardsRef = useRef(null)
   const titleRef = useRef(null)
+  const [categorySelected, setCategorySelected] = useState('')
+  const [modalStatus, setModalStatus] = useState(false)
 
   useEffect(() => {
     document.addEventListener('scroll', () => {
@@ -54,20 +57,22 @@ export const Categories = () => {
   ]
   const showCategories = () => {
     return topCategories.map((category, index) => {
-      return (<Card name={category.name} imgIcon={category.img} id={index}/>)
+      return (<Card name={category.name} imgIcon={category.img} id={index} selected={setCategorySelected} status={setModalStatus} />)
     })
   }
 
   return (
-    <div class="categories">
-      <div class="title">
-        <p class="title-text" ref={titleRef}>Cool<br/>Things</p>
+    <div className="categories">
+      <div className="title">
+        <p className="title-text" ref={titleRef}>Cool<br/>Things</p>
       </div>
-      <div class="cards" ref={elementCardsRef}>
-        <div class="wrap-cards">
+      <div className="cards" ref={elementCardsRef}>
+        <div className="wrap-cards">
           {showCategories()}
         </div>
       </div>
+      <div className="overlap" id="categories" />
+      {modalStatus && <Modal name={topCategories[categorySelected]?.name} id={categorySelected} selected={setCategorySelected} status={setModalStatus} />}
     </div>
   )
 }

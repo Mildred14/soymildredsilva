@@ -9,6 +9,20 @@
   background-image: linear-gradient(utilities.$purple, utilities.$blue);
   height: 100%;
   padding: 30px 40px;
+  position: relative;
+  & > .overlap {
+    display: none;
+    &.overlap-show {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
   & > .title > .title-text {
     font-family: utilities.$secondary-font;
     color: utilities.$yellow;
