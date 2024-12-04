@@ -5,7 +5,7 @@ import { Categories } from '../Categories'
 test('display all categories',  () => {
   render(<Categories />)
 
-  expect(screen.getAllByText('Companies')[0]).toBeInTheDocument()
+  expect(screen.getAllByText('Work Experience')[0]).toBeInTheDocument()
   expect(screen.getAllByText('Technology Stack')[0]).toBeInTheDocument()
   expect(screen.getAllByText('Contact')[0]).toBeInTheDocument()
   expect(screen.getAllByText('Curious Facts')[0]).toBeInTheDocument()

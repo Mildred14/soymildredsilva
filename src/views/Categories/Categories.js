@@ -31,7 +31,7 @@ export const Categories = () => {
 
   const topCategories= [
     {
-      name: 'Companies',
+      name: 'Work Experience',
       img: companies,
     },
     {

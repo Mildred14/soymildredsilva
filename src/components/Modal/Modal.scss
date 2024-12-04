@@ -7,6 +7,7 @@
 .modal-open {
   background-color: utilities.$white;
   width: calc(100% - 50px);
+  max-width: 950px;
   height: 80%;
   position: fixed;
   margin: auto;
@@ -19,12 +20,15 @@
   box-sizing: border-box;
   border-radius: 30px;
   display: block;
+  overflow-y: scroll;
   animation: open-modal 500ms linear;
   animation-fill-mode: forwards;
-
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
   & > .modal-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     & > a {
       cursor: pointer;
       & > img {
