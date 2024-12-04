@@ -8,20 +8,20 @@ import'./Landing.scss'
 export const Landing = () => {
   return (
     <>
-      <div class='landing-page'>
-        <div class="header">
+      <div className='landing-page'>
+        <div className="header">
           <img src={iconPaper} />
-          <p class="header__secondary-font">Mildred <br/> Silva</p>
+          <p className="header__secondary-font">Mildred <br/> Silva</p>
         </div>
-        <div class="landing-page__content">
-          <div class='lading-page__text'>
+        <div className="landing-page__content">
+          <div className='lading-page__text'>
             <h2>Transforming ideas</h2>
             <h2>into great apps!</h2>
-            <h2 class='secondary-font'>Code 100% made in Mexico</h2>
+            <h2 className='secondary-font'>Code 100% made in Mexico</h2>
             <Button />
           </div>
-          <div class="lading-page__paper-ariplane">
-            <img src={paperAirplane} class="paper-ariplane"/>
+          <div className="lading-page__paper-ariplane">
+            <img src={paperAirplane} className="paper-ariplane"/>
           </div>
         </div>
       </div>

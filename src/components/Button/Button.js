@@ -3,8 +3,8 @@ import './Button.scss'
 
 export const Button = () => {
   return (
-    <div class="btn">
-      <a href="#" class="btn-link">
+    <div className="btn">
+      <a href="#" className="btn-link">
         GET IN TOUCH
       </a>
     </div>
