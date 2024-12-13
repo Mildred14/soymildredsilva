@@ -12,10 +12,10 @@ export const Card = ({name, imgIcon, id, selected, status}) => {
   }
 
   return (
-    <div className={`card card-${id}`} key={id}>
-      <a className="more-info" onClick={handleClick} title="more-info">
+      <a className={`more-info card card-${id}`} onClick={handleClick} title="more-info" key={id}>
+      <div className="img-wrapper">
         <img src={plusIcon} width="30"/>
-      </a>
+      </div>
       <div>
         <img src={imgIcon} className="img-category" />
       </div>
@@ -24,6 +24,6 @@ export const Card = ({name, imgIcon, id, selected, status}) => {
           {name}
         </p>
       </div>
-    </div>
+      </a>
   )
 }

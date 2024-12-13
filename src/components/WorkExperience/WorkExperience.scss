@@ -1,0 +1,89 @@
+@use '../../assets/styles/utilities';
+
+.work-experience--wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  > .work-experience--card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    &:hover, :visited, :active {
+      text-decoration: none;
+    }
+    > .work-experience--img {
+      text-align: center;
+      width: 280px;
+      > img {
+        border-radius: 10px;
+        width: 100%;
+       }
+    }
+
+    > .content {
+      text-align: left;
+      width: 100%;
+      color: utilities.$black;
+      > .period {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        margin-top: 10px;
+      }
+      > .company-name {
+        font-family: utilities.$secondary-font;
+        font-size: 24px;
+        margin: 0;
+      }
+
+      > .description {
+        margin: 0;
+        font-size: 13px;
+        color: utilities.$gray;
+      }
+
+      > .job-title{
+        font-size: 12px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  > .github  {
+    font-family: utilities.$secondary-font;
+    margin: auto;
+    font-weight: 100;
+    & > .github-link {
+      color: utilities.$blue;
+      text-decoration: none;
+    }
+  }
+  @media (min-width: utilities.$layout-breakpoint-desktop) {
+    align-items: baseline;
+    > .work-experience--card {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: row;
+      max-width: -webkit-fill-available;
+      > .work-experience--img {
+        width: 150px;
+        margin-right: 20px;
+      }
+      > .content {
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.work-experience--card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
