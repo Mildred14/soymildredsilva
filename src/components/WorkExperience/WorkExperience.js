@@ -50,7 +50,7 @@ export const WorkExperience = () => {
   return (
     <div className="work-experience--wrap">
       {displayExperience()}
-      <h2 className="github">No worries, there's more in<a href="https://github.com/Mildred14" target="_blank" rel="noopener" className="github-link">GitHub</a></h2>
+      <h2 className="github">No worries, there's more in <a href="https://github.com/Mildred14" target="_blank" rel="noopener" className="github-link">GitHub</a></h2>
     </div>
   )
 }
