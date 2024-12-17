@@ -9,6 +9,7 @@
   width: calc(100% - 50px);
   max-width: 950px;
   height: 80%;
+  max-height: min-content;
   position: fixed;
   margin: auto;
   top: 0;
@@ -16,7 +17,7 @@
   bottom: 0;
   left: 0;
   z-index: 9;
-  padding: 30px 40px;
+  padding: 30px 30px;
   box-sizing: border-box;
   border-radius: 30px;
   display: block;
@@ -24,7 +25,7 @@
   animation: open-modal 500ms linear;
   animation-fill-mode: forwards;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
+
   & > .modal-header {
     display: flex;
     justify-content: space-between;

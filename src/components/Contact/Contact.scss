@@ -1,0 +1,22 @@
+.contact {
+  & > .contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    & > img {
+      margin-right: 10px;
+    }
+    & > div > .email {
+      margin: 0 0 5px 0;
+    }
+  }
+  & > .social-media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & > .instagram {
+      margin-right: 10px;
+    }
+  }
+}
