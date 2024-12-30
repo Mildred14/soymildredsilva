@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bac42e53355e2b2384e06928baf94b27",
+    "revision": "74ee2e4b92bb2d98aa3afcccdbbc9a08",
     "url": "/soymildredsilva/index.html"
   },
   {
-    "revision": "7a2ed803c831db369e6b",
-    "url": "/soymildredsilva/static/css/main.47ce0c78.chunk.css"
+    "revision": "b53bbf9eae97ff70201d",
+    "url": "/soymildredsilva/static/css/main.0985b284.chunk.css"
   },
   {
-    "revision": "e284816e6606b0744125",
-    "url": "/soymildredsilva/static/js/2.1165117e.chunk.js"
+    "revision": "289ed32946bdf6bde0f4",
+    "url": "/soymildredsilva/static/js/2.36e49429.chunk.js"
   },
   {
-    "revision": "60f6bf9e100e456690e9ab6c9a37bfc2",
-    "url": "/soymildredsilva/static/js/2.1165117e.chunk.js.LICENSE.txt"
+    "revision": "b114cc85da504a772f040e3f40f8e46a",
+    "url": "/soymildredsilva/static/js/2.36e49429.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dcaa15a394b7d73b7086",
-    "url": "/soymildredsilva/static/js/3.934fb115.chunk.js"
+    "revision": "4b78f731e0189b19f489",
+    "url": "/soymildredsilva/static/js/3.42c2c348.chunk.js"
   },
   {
-    "revision": "7a2ed803c831db369e6b",
-    "url": "/soymildredsilva/static/js/main.ae3f8588.chunk.js"
+    "revision": "b53bbf9eae97ff70201d",
+    "url": "/soymildredsilva/static/js/main.0248e8bf.chunk.js"
   },
   {
-    "revision": "ed5591acec80d0278a83",
-    "url": "/soymildredsilva/static/js/runtime-main.99ea6b21.js"
+    "revision": "a50c425617903eb22de8",
+    "url": "/soymildredsilva/static/js/runtime-main.65e0be10.js"
   },
   {
     "revision": "2b24116cee592064acae1a9d0e8017a3",
@@ -60,10 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soymildredsilva/static/media/curious-facts.efd0e2ff.svg"
   },
   {
-    "revision": "97b272c3182e52182ce5244161875fa6",
-    "url": "/soymildredsilva/static/media/email-icon.97b272c3.svg"
-  },
-  {
     "revision": "60c3bad672544c33b139a3f2160307f6",
     "url": "/soymildredsilva/static/media/figma.60c3bad6.svg"
   },
@@ -90,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4a745e153ca94a28d95358041522c576",
     "url": "/soymildredsilva/static/media/plus.4a745e15.svg"
+  },
+  {
+    "revision": "6c47162bf07481c11ec3b1b8bb2298bf",
+    "url": "/soymildredsilva/static/media/profile-picture.6c47162b.svg"
   },
   {
     "revision": "c6c9894d1528328df1657511e2c27483",
