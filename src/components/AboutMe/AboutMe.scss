@@ -1,0 +1,62 @@
+@use '../../assets/styles/utilities';
+
+@font-face {
+  font-family: 'Hagrid-Bold';
+  src: url('../../assets/fonts/Hagrid-Text-Extrabold-trial.ttf');
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  & > .information {
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    & > .text {
+      margin-bottom: 25px;
+      & > .greetings {
+        color: utilities.$blue;
+        font-family: 'Hagrid-Bold';
+        font-size: 24px;
+      }
+
+      & > p, span {
+        margin: 0;
+      }
+
+      & > p > .year {
+        font-family: 'Arial';
+      }
+    }
+    & > .social-media {
+      text-align: center;
+      & > .instagram {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  & > .profile-picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: utilities.$layout-breakpoint-desktop) {
+    flex-direction: row;
+
+    & > .information {
+      width: 50%;
+      justify-content: space-between;
+      & > .social-media {
+        text-align: left;
+      }
+    }
+
+    & > .profile-picture {
+      width: 50%;
+      justify-content: end;
+    }
+  }
+}
