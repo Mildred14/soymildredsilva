@@ -19,10 +19,11 @@ export const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const userData = Object.fromEntries(formData);
+    console.log(userData)
     fetch('https://script.google.com/macros/s/AKfycbzy1I0X9QDkywx3uGsrIRAPuV0NvzDWNp5po8cbPxmt70q1dtDKV_c2TJJ4-ep-MZvJWw/exec',
       {
         method: "POST",
-        body: userData,
+        body: (`name=${userData.name}&email=${userData.email}&message=${userData.message}`),
       }).then((res) => res.json()).then((data) => setResponse(data)).catch((error) => setErrorMsg(error))
   }
 
