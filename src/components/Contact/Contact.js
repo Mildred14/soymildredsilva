@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useMutation } from '@tanstack/react-query'
 import './Contact.scss'
 
 export const Contact = () => {
+  const [response, setResponse]= useState('')
+  const [errorMsg, setErrorMsg]= useState('')
   // const mutation = useMutation({
   //   mutationFn: (data) => {
-  //     return fetch('https://script.google.com/macros/s/AKfycbyNWurvyJh76yWf9YU286MIseIKoG377Id7fyS-CjnD9Kj0J4wsEPHtYNdvt8QAapN6bQ/exec',
+  //     return fetch('https://script.google.com/macros/s/AKfycbzy1I0X9QDkywx3uGsrIRAPuV0NvzDWNp5po8cbPxmt70q1dtDKV_c2TJJ4-ep-MZvJWw/exec',
   //       {
   //         method: "POST",
   //         body: data
@@ -17,14 +19,15 @@ export const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const userData = Object.fromEntries(formData);
-    fetch('https://script.google.com/macros/s/AKfycbyNWurvyJh76yWf9YU286MIseIKoG377Id7fyS-CjnD9Kj0J4wsEPHtYNdvt8QAapN6bQ/exec',
+    fetch('https://script.google.com/macros/s/AKfycbzy1I0X9QDkywx3uGsrIRAPuV0NvzDWNp5po8cbPxmt70q1dtDKV_c2TJJ4-ep-MZvJWw/exec',
       {
         method: "POST",
-        body: userData
-      }).then((res) => res.json()).then((date) => console.log(date)).catch((error) =>console.log(error))
-    // mutation.mutate(userData)
+        body: userData,
+      }).then((res) => res.json()).then((data) => setResponse(data)).catch((error) => setErrorMsg(error))
   }
 
+  console.log(response)
+  console.log(errorMsg)
   return (
     <form className='contact-form' onSubmit={handleSubmit}>
       <label>
