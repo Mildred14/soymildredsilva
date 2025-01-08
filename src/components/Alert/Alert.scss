@@ -1,0 +1,21 @@
+@use '../../assets/styles/utilities';
+
+.alert {
+  opacity: 0.8;
+  width: 50%;
+  height: 30px;
+  border-radius: 6px;
+  line-height: 30px;
+
+  &.success {
+    background-color: utilities.$green;
+  }
+
+  &.error {
+    background-color: utilities.$red;
+  }
+
+  & > .text {
+    margin: 0;
+  }
+}
