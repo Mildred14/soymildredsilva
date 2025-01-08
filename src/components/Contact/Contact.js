@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useMutation } from '@tanstack/react-query'
 import { Alert } from '../Alert/Alert'
 import './Contact.scss'
@@ -6,20 +6,15 @@ import './Contact.scss'
 export const Contact = () => {
   const [response, setResponse]= useState('')
   const [errorMsg, setErrorMsg]= useState('')
-  // const mutation = useMutation({
-  //   mutationFn: (data) => {
-  //     return fetch('https://script.google.com/macros/s/AKfycbzy1I0X9QDkywx3uGsrIRAPuV0NvzDWNp5po8cbPxmt70q1dtDKV_c2TJJ4-ep-MZvJWw/exec',
-  //       {
-  //         method: "POST",
-  //         body: data
-  //       })
-  //   }
-  // })
-
+  const [loading, setLoading] = useState(false);
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const userData = Object.fromEntries(formData);
+    setResponse('')
+    setErrorMsg('')
+    setLoading(true)
     fetch('https://script.google.com/macros/s/AKfycbzy1I0X9QDkywx3uGsrIRAPuV0NvzDWNp5po8cbPxmt70q1dtDKV_c2TJJ4-ep-MZvJWw/exec',
       {
         method: "POST",
@@ -30,6 +25,7 @@ export const Contact = () => {
       .then((data) => {
         event.target.reset()
         setResponse(data)
+        setLoading(false)
       })
       .catch((error) => setErrorMsg(error))
   }
@@ -42,16 +38,16 @@ export const Contact = () => {
         <label>
           Name:
         </label>
-        <input name="name" className='input' />
+        <input name="name" className='input' pattern="[a-zA-ZÀ-ÖØ-öø-ÿ.+ -]+"type="text" required />
         <label>
           Email:
         </label>
-        <input name="email" className='input'/>
+        <input name="email" className='input' type="email" required />
         <label>
           Message:
         </label>
-        <textarea name="message" className='message-input'/>
-        <button type="submit" className='CTA'>Get in touch</button>
+        <textarea name="message" className='message-input' pattern="^[a-zA-Z0-9_.-]*$" required />
+        <button type="submit" className='CTA'>{loading ? 'Sending info...' : 'Get in touch'}</button>
       </form>
     </>
   )

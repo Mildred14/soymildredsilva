@@ -2,20 +2,47 @@
 
 .alert {
   opacity: 0.8;
-  width: 50%;
   height: 30px;
+  width: 360px;
   border-radius: 6px;
   line-height: 30px;
+  display: flex;
+  opacity: 0;
+  box-sizing: content-box;
+  padding-left: 10px;
+  animation: alertMsg 6000ms ease-in-out;
 
   &.success {
-    background-color: utilities.$green;
+    background-color: rgba(85, 188, 120, 0.4);
+    & > .text {
+      color: utilities.$green;
+    }
   }
 
   &.error {
-    background-color: utilities.$red;
+    background-color: rgb(185, 39, 73, 0.4);
+    & > .text {
+      color: utilities.$red;
+    }
+  }
+
+  & > img {
+    margin-right: 5px;
   }
 
   & > .text {
     margin: 0;
+  }
+}
+
+@keyframes alertMsg {
+  0% {
+    opacity: 0;
+  }
+  30%, 70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
