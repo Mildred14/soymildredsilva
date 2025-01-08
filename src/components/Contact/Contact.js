@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { useMutation } from '@tanstack/react-query'
 import { Alert } from '../Alert/Alert'
 import './Contact.scss'
 
@@ -7,33 +6,47 @@ export const Contact = () => {
   const [response, setResponse]= useState('')
   const [errorMsg, setErrorMsg]= useState('')
   const [loading, setLoading] = useState(false);
-  
+  const [userData, setUserData] = useState({name: '', email: '', message: ''});
+  const [target, setTarget] =  useState('')
+  const [showAlert, setShowAlert] = useState(false)
+
+  useEffect(() => {
+    if (loading) {
+      fetch('https://script.google.com/macros/s/AKfycbzy1I0X9QDkywx3uGsrIRAPuV0NvzDWNp5po8cbPxmt70q1dtDKV_c2TJJ4-ep-MZvJWw/exec',
+        {
+          method: "POST",
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: (`name=${userData.name}&email=${userData.email}&message=${userData.message}`),
+        })
+        .then((res) => res.text())
+        .then((data) => {
+          target.reset()
+          setResponse(data)
+          setShowAlert(true)
+          setLoading(false)
+        })
+        .catch((error) => {
+          setErrorMsg(error)
+          setShowAlert(true)
+          setLoading(false)
+        })
+      setShowAlert(false)
+    }
+  }, [loading])
+
   const handleSubmit = (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    const userData = Object.fromEntries(formData);
-    setResponse('')
-    setErrorMsg('')
+    event.preventDefault()
+    setTarget(event.target)
+    const formData = new FormData(event.target)
+    setUserData(Object.fromEntries(formData))
     setLoading(true)
-    fetch('https://script.google.com/macros/s/AKfycbzy1I0X9QDkywx3uGsrIRAPuV0NvzDWNp5po8cbPxmt70q1dtDKV_c2TJJ4-ep-MZvJWw/exec',
-      {
-        method: "POST",
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: (`name=${userData.name}&email=${userData.email}&message=${userData.message}`),
-      })
-      .then((res) => res.text())
-      .then((data) => {
-        event.target.reset()
-        setResponse(data)
-        setLoading(false)
-      })
-      .catch((error) => setErrorMsg(error))
   }
+
 
   return (
     <>
-      {response && (<Alert msg={response} status='success' />)}
-      {errorMsg && (<Alert msg={response} status='error' />)}
+      {(showAlert && response.length > 1) && (<Alert msg={response} status='success' />)}
+      {(showAlert && errorMsg) && (<Alert msg={response} status='error' />)}
       <form className='contact-form' onSubmit={handleSubmit}>
         <label>
           Name:
