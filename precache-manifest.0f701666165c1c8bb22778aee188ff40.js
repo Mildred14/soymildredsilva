@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d74ed3bfcca7c4339e44843ac191ac4",
+    "revision": "8c665ab24ae06c7e65063cc87f636ca7",
     "url": "/soymildredsilva/index.html"
   },
   {
-    "revision": "1c3fa9496783e502a2d6",
-    "url": "/soymildredsilva/static/css/main.0985b284.chunk.css"
+    "revision": "d42076da1ddf755a9100",
+    "url": "/soymildredsilva/static/css/main.2f41e17d.chunk.css"
   },
   {
-    "revision": "289ed32946bdf6bde0f4",
-    "url": "/soymildredsilva/static/js/2.36e49429.chunk.js"
+    "revision": "5e083d0ad67b7f47f1c7",
+    "url": "/soymildredsilva/static/js/2.eac490d5.chunk.js"
   },
   {
     "revision": "b114cc85da504a772f040e3f40f8e46a",
-    "url": "/soymildredsilva/static/js/2.36e49429.chunk.js.LICENSE.txt"
+    "url": "/soymildredsilva/static/js/2.eac490d5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4b78f731e0189b19f489",
-    "url": "/soymildredsilva/static/js/3.42c2c348.chunk.js"
+    "revision": "b9ac684491a3d5e98acf",
+    "url": "/soymildredsilva/static/js/3.e29a1aba.chunk.js"
   },
   {
-    "revision": "1c3fa9496783e502a2d6",
-    "url": "/soymildredsilva/static/js/main.d5f0a11d.chunk.js"
+    "revision": "d42076da1ddf755a9100",
+    "url": "/soymildredsilva/static/js/main.762c243f.chunk.js"
   },
   {
-    "revision": "a50c425617903eb22de8",
-    "url": "/soymildredsilva/static/js/runtime-main.65e0be10.js"
+    "revision": "948906a1de67c24c3315",
+    "url": "/soymildredsilva/static/js/runtime-main.00f0eeb7.js"
   },
   {
     "revision": "2b24116cee592064acae1a9d0e8017a3",
@@ -44,12 +44,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soymildredsilva/static/media/about.8a85751a.svg"
   },
   {
+    "revision": "f9d298c20385c9b88c1aa98af55671b4",
+    "url": "/soymildredsilva/static/media/check.f9d298c2.svg"
+  },
+  {
     "revision": "98a5e5c666faac1d4d611d395fb3dfdf",
     "url": "/soymildredsilva/static/media/companies.98a5e5c6.svg"
   },
   {
     "revision": "7dd56a15b9556886523e7d0185ed6b5e",
     "url": "/soymildredsilva/static/media/contact.7dd56a15.svg"
+  },
+  {
+    "revision": "50e84dab4f3857ce3a1b91e290b84848",
+    "url": "/soymildredsilva/static/media/cross-mark.50e84dab.svg"
   },
   {
     "revision": "fb6919eae2528dd684bd0d86c4caf968",
