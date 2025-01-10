@@ -51,7 +51,7 @@ export const Categories = () => {
       img: about,
     },
     {
-      name: 'Reviews',
+      name: 'Testimonials',
       img: reviews,
     },
   ]
