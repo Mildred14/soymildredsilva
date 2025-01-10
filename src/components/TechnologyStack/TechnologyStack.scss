@@ -5,50 +5,57 @@
   src: url('../../assets/fonts/Hagrid-Text-Extrabold-trial.ttf');
 }
 
-.tech-stack {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+.stack {
+  .tech-stack {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 
-  & > .tech-logo {
-    margin-right: 10px;
-  }
-
-  & > .tech-info {
-    & > .tech-name {
-      font-family: 'Hagrid-Bold', 'Roboto', sans-serif;
-      margin: 0 0 5px 0;
-      }
-    & > .tech-description {
-      font-size: 12px;
-      color: utilities.$gray;
-      margin: 0px;
-    }
-  }
-
-  @media (min-width: utilities.$layout-breakpoint-desktop) {
     & > .tech-logo {
-      & > img {
-        width: 60px;
-      }
+      margin-right: 10px;
     }
 
     & > .tech-info {
       & > .tech-name {
-        font-size: 20px;
+        font-family: 'Hagrid-Bold', 'Roboto', sans-serif;
+        margin: 0 0 5px 0;
         }
+
       & > .tech-description {
-        font-size: 14px;
+        font-size: 12px;
+        color: utilities.$gray;
+        margin: 0px;
       }
     }
   }
-}
 
-@media (min-width: utilities.$layout-breakpoint-desktop) {
+  @media (min-width: utilities.$layout-breakpoint-desktop) {
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
+    & > .tech-stack {
+      & > .tech-logo {
+        & > img {
+          width: 60px;
+        }
+      }
+
+      & > .tech-info {
+        & > .tech-name {
+          font-size: 20px;
+          }
+        & > .tech-description {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 
 .foot-description {
   font-size: 12px;
   text-align: center;
+  margin: 0;
 }

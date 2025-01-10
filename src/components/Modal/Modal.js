@@ -31,7 +31,7 @@ export const Modal = ({name, id, selected, status}) => {
       <div className="modal-header">
         <h2>{name}</h2>
         <a onClick={handleModal}>
-          <img src={plusIcon} width="30" />
+          <img src={plusIcon} width="30" className="cross-mark"/>
         </a>
       </div>
       {modalContent()}

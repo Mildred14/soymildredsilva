@@ -65,7 +65,9 @@ export const TechnologyStack = () => {
 
   return (
     <div>
-      {displayStack()}
+      <div className='stack'>
+        {displayStack()}
+      </div>
       <p className='foot-description'>
         That's my basic stack, but I've used more languages and tools.
         <br />

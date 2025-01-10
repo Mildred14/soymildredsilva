@@ -4,9 +4,9 @@ import { Modal } from '../../components/Modal/Modal'
 import companies from '../../assets/images/companies.svg'
 import techStack from '../../assets/images/tech-stack.svg'
 import contact from '../../assets/images/contact.svg'
-import curiousFacts from '../../assets/images/curious-facts.svg'
 import about from '../../assets/images/about.svg'
 import reviews from '../../assets/images/reviews.svg'
+import blogPost from '../../assets/images/blogpost.svg'
 
 export const Categories = () => {
   const elementCardsRef = useRef(null)
@@ -43,8 +43,8 @@ export const Categories = () => {
       img: contact,
     },
     {
-      name: 'Curious Facts',
-      img: curiousFacts,
+      name: 'Blog Posts',
+      img: blogPost,
     },
     {
       name: 'About me',
