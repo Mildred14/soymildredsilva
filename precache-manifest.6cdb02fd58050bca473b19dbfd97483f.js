@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8c665ab24ae06c7e65063cc87f636ca7",
+    "revision": "6db24b462253821dd139c17a6fd96e61",
     "url": "/soymildredsilva/index.html"
   },
   {
-    "revision": "d42076da1ddf755a9100",
-    "url": "/soymildredsilva/static/css/main.2f41e17d.chunk.css"
+    "revision": "47c63b2040107ada75ca",
+    "url": "/soymildredsilva/static/css/main.ec95aa88.chunk.css"
   },
   {
     "revision": "5e083d0ad67b7f47f1c7",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soymildredsilva/static/js/3.e29a1aba.chunk.js"
   },
   {
-    "revision": "d42076da1ddf755a9100",
-    "url": "/soymildredsilva/static/js/main.762c243f.chunk.js"
+    "revision": "47c63b2040107ada75ca",
+    "url": "/soymildredsilva/static/js/main.c8968087.chunk.js"
   },
   {
     "revision": "948906a1de67c24c3315",
@@ -40,20 +40,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soymildredsilva/static/media/Hagrid-Text-Extrabold-trial.113863fa.ttf"
   },
   {
-    "revision": "8a85751ada61620d911496e1bc5b6a45",
-    "url": "/soymildredsilva/static/media/about.8a85751a.svg"
+    "revision": "094b90ffe31d063de91f41631ee53bbc",
+    "url": "/soymildredsilva/static/media/about.094b90ff.png"
+  },
+  {
+    "revision": "7478abddf78c1fd9396b1e4e5bcc0718",
+    "url": "/soymildredsilva/static/media/blogpost.7478abdd.png"
   },
   {
     "revision": "f9d298c20385c9b88c1aa98af55671b4",
     "url": "/soymildredsilva/static/media/check.f9d298c2.svg"
   },
   {
-    "revision": "98a5e5c666faac1d4d611d395fb3dfdf",
-    "url": "/soymildredsilva/static/media/companies.98a5e5c6.svg"
+    "revision": "4093cdf9b0998fb6c756ec02d821869c",
+    "url": "/soymildredsilva/static/media/companies.4093cdf9.png"
   },
   {
-    "revision": "7dd56a15b9556886523e7d0185ed6b5e",
-    "url": "/soymildredsilva/static/media/contact.7dd56a15.svg"
+    "revision": "9d3aa2b85d0569f70bb7bbc8856a4d04",
+    "url": "/soymildredsilva/static/media/contact.9d3aa2b8.png"
   },
   {
     "revision": "50e84dab4f3857ce3a1b91e290b84848",
@@ -62,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fb6919eae2528dd684bd0d86c4caf968",
     "url": "/soymildredsilva/static/media/css.fb6919ea.svg"
-  },
-  {
-    "revision": "efd0e2ff8a69399f570ab211f299c92d",
-    "url": "/soymildredsilva/static/media/curious-facts.efd0e2ff.svg"
   },
   {
     "revision": "60c3bad672544c33b139a3f2160307f6",
@@ -104,8 +104,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soymildredsilva/static/media/react.c6c9894d.svg"
   },
   {
-    "revision": "dbff7fe9ba98b0a18827fe530ecefadb",
-    "url": "/soymildredsilva/static/media/reviews.dbff7fe9.svg"
+    "revision": "17d01ec160af01d113f584cd00ec85b7",
+    "url": "/soymildredsilva/static/media/reviews.17d01ec1.png"
   },
   {
     "revision": "36fd12af38ef3210953b8b865d12bf73",
@@ -116,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soymildredsilva/static/media/salesloft.c0babe63.png"
   },
   {
-    "revision": "742d290237bf2f30dbb716d5848cf9d5",
-    "url": "/soymildredsilva/static/media/tech-stack.742d2902.svg"
+    "revision": "c0a127cd5c9af49f736c80726dc0adb5",
+    "url": "/soymildredsilva/static/media/tech-stack.c0a127cd.png"
   },
   {
     "revision": "042bcd4c355abfca5fa70d0034af7169",
