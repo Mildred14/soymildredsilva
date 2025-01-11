@@ -37,6 +37,10 @@
     }
   }
 
+  & > div > .img-category {
+    height: 100px;
+  }
+
   @media (min-width: utilities.$layout-breakpoint-desktop) {
     margin-right: 5px;
     width: 100%;

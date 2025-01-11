@@ -1,12 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";import "./Categories.scss";
 import { Card } from '../../components/Card/Card'
 import { Modal } from '../../components/Modal/Modal'
-import companies from '../../assets/images/companies.svg'
-import techStack from '../../assets/images/tech-stack.svg'
-import contact from '../../assets/images/contact.svg'
-import about from '../../assets/images/about.svg'
-import reviews from '../../assets/images/reviews.svg'
-import blogPost from '../../assets/images/blogpost.svg'
+import companies from '../../assets/images/companies.png'
+import techStack from '../../assets/images/tech-stack.png'
+import contact from '../../assets/images/contact.png'
+import about from '../../assets/images/about.png'
+import reviews from '../../assets/images/reviews.png'
+import blogPost from '../../assets/images/blogpost.png'
 
 export const Categories = () => {
   const elementCardsRef = useRef(null)
