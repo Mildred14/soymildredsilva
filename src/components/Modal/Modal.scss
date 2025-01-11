@@ -32,7 +32,8 @@
     align-items: center;
     & > a {
       cursor: pointer;
-      & > img {
+      & > .cross-mark {
+        animation: rotation 800ms ease-in-out 200ms;
         rotate: 45deg;
       }
     }
@@ -47,5 +48,14 @@
   100% {
     transform: translate(0, 0);
     opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 45deg;
   }
 }

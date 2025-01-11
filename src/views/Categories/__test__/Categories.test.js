@@ -8,9 +8,9 @@ test('display all categories',  () => {
   expect(screen.getAllByText('Work Experience')[0]).toBeInTheDocument()
   expect(screen.getAllByText('Technology Stack')[0]).toBeInTheDocument()
   expect(screen.getAllByText('Contact')[0]).toBeInTheDocument()
-  expect(screen.getAllByText('Curious Facts')[0]).toBeInTheDocument()
+  expect(screen.getAllByText('Blog Posts')[0]).toBeInTheDocument()
   expect(screen.getAllByText('About me')[0]).toBeInTheDocument()
-  expect(screen.getAllByText('Reviews')[0]).toBeInTheDocument()
+  expect(screen.getAllByText('Testimonials')[0]).toBeInTheDocument()
 })
 
 test('open Contact modal',  () => {
