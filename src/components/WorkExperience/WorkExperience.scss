@@ -39,7 +39,7 @@
         margin-top: 10px;
       }
       > .company-name {
-        font-family: utilities.$secondary-font;
+        font-family: utilities.$poppings-regular-font;
         font-size: 24px;
         margin: 0;
       }
@@ -58,7 +58,7 @@
     }
   }
   > .github  {
-    font-family: utilities.$secondary-font;
+    font-family: utilities.$poppings-regular-font;
     margin: auto;
     font-weight: 100;
     & > .github-link {

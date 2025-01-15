@@ -1,8 +1,8 @@
 @use '../../assets/styles/utilities';
 
 @font-face {
-  font-family: 'Berlinerins';
-  src: url('../../assets/fonts/Berlinerins-Trial-Grotesk.otf');
+  font-family: 'LS-Bold';
+  src: url('../../assets/fonts/LeagueSpartan-Bold.ttf');
 }
 
 .landing-page {
@@ -13,16 +13,26 @@
   position: relative;
   flex-direction: column;
   padding: 30px 40px;
+  background-image: url('../../assets/images/bg-blue.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+  animation: animatedBackground 3s linear;
+
+  @keyframes animatedBackground {
+    0% {
+      background-size: 180px;
+    }
+    100% {
+      background-size: 300px;
+    }
+  }
+
   .header {
     display: flex;
     & > img {
       width: 60px;
       margin-right: 5px;
-    }
-    & > p {
-      margin: 0;
-      font-size: 26px;
-      line-height: 26px;
     }
   }
   & > .landing-page__content {
@@ -31,51 +41,14 @@
     justify-content: center;
     margin-bottom: 80px;
     height: 100%;
-    & > .lading-page__paper-ariplane {
-      position: relative;
-      animation-duration: 1s;
-      animation-name: airplane-icon;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in-out;
-      @keyframes airplane-icon {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      & > .paper-ariplane {
-        position: absolute;
-        top: -100px;
-        left: 150px;
-        width: 50vw;
-        animation: airplane-icon 1s linear;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-
-        @keyframes airplane-icon {
-          0% {
-            scale: 100%;
-          }
-          50% {
-            scale: 110%;
-          }
-          75% {
-            scale: 100%;
-          }
-          100% {
-            scale: 103%;
-          }
-        }
-      }
-    }
+    margin-top: 60px;
 
     & > .lading-page__text {
       animation: title-text 1s linear;
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
+      padding-left: 0px;
+
       @keyframes title-text {
         0% {
           opacity: 0;
@@ -91,22 +64,53 @@
       & > h2 {
         margin: 0px;
         white-space-collapse: collapse;
-        font-size: 7vw;
         text-wrap: nowrap;
+        text-align: center;
+        font-size: 3.7vmax;
       }
-
+      & > .emoji {
+        font-size: 80px;
+      }
       & > .secondary-font {
-        font-family: utilities.$secondary-font;
-        color: utilities.$blue;
+        font-family: utilities.$ls-font-bold;
+        color: utilities.$purple;
+        margin-bottom: 33px;
+        margin-top: 10px;
+        font-size: 24px;
       }
     }
   }
 
   .header__secondary-font {
-    font-family: utilities.$secondary-font;
+    font-family: utilities.$ls-font-bold;
     color: utilities.$blue;
-    line-height: 22px;
-    font-size: 24px;
+    line-height: 1;
+    font-size: 22px;
+    margin: auto 0;
+  }
+
+  .wrap-data {
+    .data {
+      display: flex;
+      margin-bottom: 25px;
+      & > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        & > .value {
+          font-family: utilities.$ls-font-bold;
+          font-size: 40px;
+          margin: 0;
+        }
+        & > .datum {
+          font-size: 18px;
+          margin: 0;
+          text-align: center;
+          color: utilities.$grayDark;
+        }
+      }
+    }
   }
 
   @media (min-width: utilities.$layout-breakpoint-desktop) {
@@ -114,58 +118,71 @@
     padding: 40px 70px;
     height: min-content;
     display: flex;
+    background-size: 500px;
+    animation: animatedBackground 3s linear;
+
+    @keyframes animatedBackground {
+      0% {
+        background-size: 300px;
+      }
+      100% {
+        background-size: 500px;
+      }
+    }
     & > .landing-page__content {
       display: flex;
-      flex-direction: row;
       align-self: center;
       margin: 140px 0;
       max-width: 950px;
       width: 100%;
       justify-content: flex-start;
 
-      & > .lading-page__paper-ariplane {
-        position: relative;
-        width: 200px;
-        height: 200px;
-
-        & > .paper-ariplane {
-          position: absolute;
-          left: -40px;
-          top: -80px;
-          width: 250px;
-        }
-      }
       & > .lading-page__text {
-        max-width: 600px;
         width: 100%;
         & > h2 {
           margin: 0px;
           white-space-collapse: collapse;
-          font-size: 55px;
           text-wrap: nowrap;
+          font-size: 40px;
+        }
+        & > .emoji {
+          font-size: 120px;
         }
         & > .secondary-font {
-          margin: 10px 0px;
-          font-size: 65px;
+          font-size: 35px;
+        }
+      }
+      .wrap-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .data {
+          width: 50%;
+          .value {
+            font-size: 40px;
+          }
         }
       }
     }
   }
 
-  @media (min-width: utilities.$layout-breakpoint-desktop) and (max-width: utilities.$layout-breakpoint-medium) {
+  @media (min-width: utilities.$layout-breakpoint-large) {
     & > .landing-page__content {
-      max-width: 850px;
-      & > .lading-page__paper-ariplane > .paper-ariplane {
-        width: 200px;
-        top: -55px;
-      }
+      max-width: 950px;
       & > .lading-page__text {
-        max-width: 500px;
         & > h2 {
-          font-size: 45px;
+          font-size: 50px;
         }
         & > .secondary-font {
           font-size: 45px;
+        }
+      }
+
+      .wrap-data {
+        .data {
+          .value {
+            font-size: 50px;
+          }
         }
       }
     }

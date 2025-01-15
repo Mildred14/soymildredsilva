@@ -1,8 +1,8 @@
 @use '../../assets/styles/utilities';
 
 @font-face {
-  font-family: 'Berlinerins';
-  src: url('../../assets/fonts/Berlinerins-Trial-Grotesk.otf');
+  font-family: 'Poppins-Medium';
+  src: url('../../assets/fonts/Poppins-Medium.ttf');
 }
 
 .categories {
@@ -24,10 +24,11 @@
     }
   }
   & > .title > .title-text {
-    font-family: utilities.$secondary-font;
+    font-family: 'Poppins-Medium';
     color: utilities.$yellow;
-    font-size: 50px;
-    line-height: 42px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
     &.smooth-categories {
       animation: up-animation 1s linear;
       animation-fill-mode: forwards;
