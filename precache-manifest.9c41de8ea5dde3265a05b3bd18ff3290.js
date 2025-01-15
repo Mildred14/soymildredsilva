@@ -1,47 +1,51 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6db24b462253821dd139c17a6fd96e61",
+    "revision": "b12cdf81b834d3c39e4d51e8516c802e",
     "url": "/soymildredsilva/index.html"
   },
   {
-    "revision": "47c63b2040107ada75ca",
-    "url": "/soymildredsilva/static/css/main.ec95aa88.chunk.css"
+    "revision": "b160ce64ca5209dffc99",
+    "url": "/soymildredsilva/static/css/main.5a383896.chunk.css"
   },
   {
-    "revision": "5e083d0ad67b7f47f1c7",
-    "url": "/soymildredsilva/static/js/2.eac490d5.chunk.js"
+    "revision": "77de025354fb9cbba64c",
+    "url": "/soymildredsilva/static/js/2.842098d1.chunk.js"
   },
   {
     "revision": "b114cc85da504a772f040e3f40f8e46a",
-    "url": "/soymildredsilva/static/js/2.eac490d5.chunk.js.LICENSE.txt"
+    "url": "/soymildredsilva/static/js/2.842098d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b9ac684491a3d5e98acf",
-    "url": "/soymildredsilva/static/js/3.e29a1aba.chunk.js"
+    "revision": "c4dffb80b2e4393e1232",
+    "url": "/soymildredsilva/static/js/3.f69320a1.chunk.js"
   },
   {
-    "revision": "47c63b2040107ada75ca",
-    "url": "/soymildredsilva/static/js/main.c8968087.chunk.js"
+    "revision": "b160ce64ca5209dffc99",
+    "url": "/soymildredsilva/static/js/main.24aff242.chunk.js"
   },
   {
-    "revision": "948906a1de67c24c3315",
-    "url": "/soymildredsilva/static/js/runtime-main.00f0eeb7.js"
+    "revision": "98e5f3eea09df636764f",
+    "url": "/soymildredsilva/static/js/runtime-main.6ccecd72.js"
   },
   {
-    "revision": "2b24116cee592064acae1a9d0e8017a3",
-    "url": "/soymildredsilva/static/media/Berlinerins-Trial-Grotesk.2b24116c.otf"
+    "revision": "9a223d8a028354713a4a4072dc19250a",
+    "url": "/soymildredsilva/static/media/LeagueSpartan-Bold.9a223d8a.ttf"
   },
   {
-    "revision": "fcd427f1ebeea0bc781d457bd3a15c74",
-    "url": "/soymildredsilva/static/media/Hagrid-Regular-trial.fcd427f1.ttf"
+    "revision": "f61a4eb27371b7453bf5b12ab3648b9e",
+    "url": "/soymildredsilva/static/media/Poppins-Medium.f61a4eb2.ttf"
   },
   {
-    "revision": "113863faf3ef54884383c966bb3bc956",
-    "url": "/soymildredsilva/static/media/Hagrid-Text-Extrabold-trial.113863fa.ttf"
+    "revision": "8b6af8e5e8324edfd77af8b3b35d7f9c",
+    "url": "/soymildredsilva/static/media/Poppins-Regular.8b6af8e5.ttf"
   },
   {
     "revision": "094b90ffe31d063de91f41631ee53bbc",
     "url": "/soymildredsilva/static/media/about.094b90ff.png"
+  },
+  {
+    "revision": "5547ec5c0cf0ee11041c5c53a318b795",
+    "url": "/soymildredsilva/static/media/bg-blue.5547ec5c.png"
   },
   {
     "revision": "7478abddf78c1fd9396b1e4e5bcc0718",
@@ -86,10 +90,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "55d83985b46d5336f45f27036b3018cd",
     "url": "/soymildredsilva/static/media/instagram.55d83985.svg"
-  },
-  {
-    "revision": "bfb3d0854272511bcd293187199e7517",
-    "url": "/soymildredsilva/static/media/paper-airplane.bfb3d085.svg"
   },
   {
     "revision": "4a745e153ca94a28d95358041522c576",
