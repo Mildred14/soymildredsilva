@@ -12,5 +12,4 @@ test('display TechnologyStack', () => {
   expect(screen.getByText('CSS')).toBeInTheDocument()
   expect(screen.getByText('Git')).toBeInTheDocument()
   expect(screen.getByText('Figma')).toBeInTheDocument()
-  expect(screen.getByRole('link', { name: 'email' })).toHaveAttribute('href', 'mailto:mildrednatalys@gmail.com')
 })

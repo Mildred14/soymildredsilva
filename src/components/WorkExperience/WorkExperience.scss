@@ -33,10 +33,10 @@
       width: 100%;
       color: utilities.$black;
       > .period {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         margin: 0;
         margin-top: 10px;
+        margin-bottom: 10px;
       }
       > .company-name {
         font-family: utilities.$poppings-regular-font;
@@ -46,7 +46,7 @@
 
       > .description {
         margin: 0;
-        font-size: 13px;
+        font-size: 14px;
         color: utilities.$gray;
       }
 
@@ -58,9 +58,9 @@
     }
   }
   > .github  {
-    font-family: utilities.$poppings-regular-font;
     margin: auto;
     font-weight: 100;
+    font-size: 16px;
     & > .github-link {
       color: utilities.$blue;
       text-decoration: none;

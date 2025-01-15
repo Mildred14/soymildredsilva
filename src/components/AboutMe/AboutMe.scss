@@ -49,8 +49,24 @@
     }
 
     & > .profile-picture {
-      width: 50%;
+      width: 40%;
       justify-content: end;
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (min-width: utilities.$layout-breakpoint-medium) {
+    & > .information {
+      width: 55%;
+    }
+
+    & > .profile-picture {
+      width: 45%;
+      & > img {
+        width: 80%;
+      }
     }
   }
 }
