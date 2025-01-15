@@ -1,9 +1,5 @@
 @use '../../assets/styles/utilities';
 
-@font-face {
-  font-family: 'Hagrid-Bold';
-  src: url('../../assets/fonts/Hagrid-Text-Extrabold-trial.ttf');
-}
 
 .stack {
   .tech-stack {
@@ -17,7 +13,7 @@
 
     & > .tech-info {
       & > .tech-name {
-        font-family: 'Hagrid-Bold', 'Roboto', sans-serif;
+        font-family: utilities.$poppings-regular-font;
         margin: 0 0 5px 0;
         }
 
@@ -55,7 +51,7 @@
 }
 
 .foot-description {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   margin: 0;
 }

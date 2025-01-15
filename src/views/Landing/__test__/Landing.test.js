@@ -6,5 +6,5 @@ test('render Landing', () => {
   render (<Landing />)
 
   expect(screen.getByText('Transforming ideas')).toBeInTheDocument()
-  expect(screen.getByText('Mildred Silva')).toBeInTheDocument()
+  expect(screen.getByText('MILDRED SILVA')).toBeInTheDocument()
 })

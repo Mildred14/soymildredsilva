@@ -1,9 +1,18 @@
 @font-face {
-  font-family: 'Hagrid';
-  src: url('./assets/fonts/Hagrid-Regular-trial.ttf');
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
 }
+
 
 body {
   margin: 0;
-  font-family: 'Hagrid', 'Roboto', sans-serif;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+h2, p {
+  line-height: 1
+}
+
+textarea {
+  font-family: 'Poppins', 'Roboto', sans-serif;
 }

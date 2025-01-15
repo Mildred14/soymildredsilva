@@ -71,7 +71,7 @@ export const TechnologyStack = () => {
       <p className='foot-description'>
         That's my basic stack, but I've used more languages and tools.
         <br />
-        Send me an <a href="mailto:mildrednatalys@gmail.com">email</a> and I can share you my curriculum with more details ✌🏼</p>
+        Contact me and I can share you my curriculum with more details ✌🏼</p>
     </div>
   )
 }

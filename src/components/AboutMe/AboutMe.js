@@ -12,15 +12,20 @@ export const AboutMe = () => {
           <h3 className='greetings'>Hi there!</h3>
           <p>
             I’m Mildred, a passionate Mexican web developer,
-            a coffee lover, and a content creator.
-            Long story short, I decided to study Software Engineering in
-            <span className='year'> 2015</span>,
-            but honestly, I was not sure about this decision,
-            and it wasn’t until the last year of the University
-            that I realized that I took the best decision.
-            What changed it? A BootCamp where I had the opportunity
-            to develop a project for a real client and I had a
-            mentor that taught me the beauty of being a web developer.
+            a coffee lover, and a content creator. I started my
+            journey when I decided to study Software engineering
+            in 2015, but I fell in love with my career until
+            2018 when I joined a BootCamp and knew the power
+            of being a developer. Now, after 4 years working in
+            different companies, I realize that a developer is not
+            only a person who codes and delivers on time, it's also
+            the engaged with the product and its quality. While it's
+            common for developers to implement features without questioning the
+            purpose, I take a different approach.  Before coding a feature
+            or making a modification, I try to understand the reason behind
+            that change. This helps me gain a deeper familiarity with the
+            product and enables me to propose ideas and improvements that
+            contribute to its overall success.
           </p>
         </div>
         <div className='social-media'>
