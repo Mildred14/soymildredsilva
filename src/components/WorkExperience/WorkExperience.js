@@ -32,13 +32,13 @@ export const WorkExperience = () => {
   const displayExperience = () => {
     return experiences.map((experience) => {
       return (
-        <a href={experience.link} target="_blank" rel="noopener" className="work-experience--card">
-            <div className="work-experience--img">
+        <a href={experience.link} target="_blank" rel="noopener" className="item--card">
+            <div className="item--img">
               <img src={experience?.img}/>
             </div>
             <div className="content">
               <p className="period">{experience.period}</p>
-              <p className="company-name">{experience.name}</p>
+              <p className="name">{experience.name}</p>
               <p className="job-title">{experience.jobTitle}</p>
               <p className="description">{experience.description}</p>
             </div>
@@ -48,7 +48,7 @@ export const WorkExperience = () => {
   }
 
   return (
-    <div className="work-experience--wrap">
+    <div className="items">
       {displayExperience()}
       <h2 className="github">No worries, there's more in <a href="https://github.com/Mildred14" target="_blank" rel="noopener" className="github-link">GitHub</a></h2>
     </div>
