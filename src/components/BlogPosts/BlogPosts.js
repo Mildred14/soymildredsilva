@@ -42,7 +42,7 @@ export const BlogPosts = () => {
   return (
     <div className="items">
       <h3>Plase take a moment to read my latest posts 📚☕️</h3>
-      {true ? (<Loading/>) : displayPosts()}
+      {isLoading ? (<Loading/>) : displayPosts()}
     </div>
   )
 }
