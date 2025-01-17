@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Loading } from '../Loading/Loading'
 import './BlogPost.scss'
 export const BlogPosts = () => {
   const [posts, setPosts] = useState([])
@@ -41,7 +42,7 @@ export const BlogPosts = () => {
   return (
     <div className="items">
       <h3>Plase take a moment to read my latest posts 📚☕️</h3>
-      {displayPosts()}
+      {true ? (<Loading/>) : displayPosts()}
     </div>
   )
 }
