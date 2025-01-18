@@ -4,6 +4,7 @@ import { WorkExperience } from "../WorkExperience/WorkExperience"
 import { TechnologyStack } from "../TechnologyStack/TechnologyStack"
 import { Contact } from "../Contact/Contact"
 import { AboutMe } from "../AboutMe/AboutMe"
+import { BlogPosts } from "../BlogPosts/BlogPosts"
 import "./Modal.scss"
 
 export const Modal = ({name, id, selected, status}) => {
@@ -18,7 +19,7 @@ export const Modal = ({name, id, selected, status}) => {
       case 0: return(<WorkExperience />);
       case 1: return(<TechnologyStack />);
       case 2: return(<Contact />);
-      case 3: return(<h1>Curious</h1>);
+      case 3: return(<BlogPosts />);
       case 4: return(<AboutMe />);
       case 5: return(<h1>5</h1>);
       default:

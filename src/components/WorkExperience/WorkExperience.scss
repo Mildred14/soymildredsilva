@@ -1,12 +1,12 @@
 @use '../../assets/styles/utilities';
 
-.work-experience--wrap {
+.items {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 
-  > .work-experience--card {
+  > .item--card {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
     &:hover, :visited, :active {
       text-decoration: none;
     }
-    > .work-experience--img {
+    > .item--img {
       text-align: center;
       width: 280px;
       > img {
@@ -38,7 +38,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
       }
-      > .company-name {
+      > .name {
         font-family: utilities.$poppings-regular-font;
         font-size: 24px;
         margin: 0;
@@ -66,15 +66,15 @@
       text-decoration: none;
     }
   }
-  
+
   @media (min-width: utilities.$layout-breakpoint-desktop) {
     align-items: baseline;
-    > .work-experience--card {
+    > .item--card {
       width: 100%;
       align-items: flex-start;
       flex-direction: row;
       max-width: -webkit-fill-available;
-      > .work-experience--img {
+      > .item--img {
         width: 150px;
         margin-right: 20px;
       }
@@ -85,6 +85,6 @@
   }
 }
 
-.work-experience--card:hover {
+.item--card:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
