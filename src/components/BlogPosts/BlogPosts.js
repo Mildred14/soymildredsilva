@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Loading } from '../Loading/Loading'
 import './BlogPost.scss'
+
 export const BlogPosts = () => {
   const [posts, setPosts] = useState([])
   const [errors, setErrors] = useState([])
@@ -26,13 +27,13 @@ export const BlogPosts = () => {
 
         return (
           <a href={post.link} target="_blank" rel="noopener" className="item--card" key={post.guid}>
-              <div className="item--img posts-img">
-                <img src={image}/>
-              </div>
-              <div className="content post-content">
-                <p className="name">{post.title}</p>
-                <p className="description">{shortDescription}</p>
-              </div>
+            <div className="item--img posts-img">
+              <img src={image}/>
+            </div>
+            <div className="content post-content">
+              <p className="name">{post.title}</p>
+              <p className="description">{shortDescription}</p>
+            </div>
           </a>
         )
       })
