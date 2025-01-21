@@ -1,0 +1,18 @@
+@use '../../assets/styles/utilities';
+
+.testimonials {
+  width: 100%;
+  border-radius: 10px;
+  background-color: utilities.$blueGray;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  .quotes {
+    width: 50px;
+  }
+
+  .info-colleague {
+    display: flex;
+  }
+}

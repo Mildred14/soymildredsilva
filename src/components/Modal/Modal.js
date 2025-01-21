@@ -6,6 +6,7 @@ import { Contact } from "../Contact/Contact"
 import { AboutMe } from "../AboutMe/AboutMe"
 import { BlogPosts } from "../BlogPosts/BlogPosts"
 import "./Modal.scss"
+import { Testimonials } from "../Testimonials/Testimonials"
 
 export const Modal = ({name, id, selected, status}) => {
   const handleModal = () => {
@@ -21,7 +22,7 @@ export const Modal = ({name, id, selected, status}) => {
       case 2: return(<Contact />);
       case 3: return(<BlogPosts />);
       case 4: return(<AboutMe />);
-      case 5: return(<h1>5</h1>);
+      case 5: return(<Testimonials />);
       default:
         return null
     }
