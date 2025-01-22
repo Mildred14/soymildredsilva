@@ -2,6 +2,7 @@ import React from 'react'
 import profilePicture from '../../assets/images/profile-picture.svg'
 import twitter from '../../assets/images/twitter.png'
 import instagram from '../../assets/images/instagram.svg'
+import youtube from '../../assets/images/youtube.png'
 import './AboutMe.scss'
 
 export const AboutMe = () => {
@@ -29,12 +30,15 @@ export const AboutMe = () => {
           </p>
         </div>
         <div className='social-media'>
-          <a href='https://www.instagram.com/soymildredsilva' target="_blank" rel="noopener noreferrer" className='instagram'>
+          <a href='https://www.instagram.com/soymildredsilva' target="_blank" rel="noopener noreferrer" className='mr-10'>
             <img src={instagram} />
           </a>
-          <a href='https://x.com/soymildredsilva' target="_blank" rel="noopener noreferrer">
+          <a href='https://x.com/soymildredsilva' target="_blank" rel="noopener noreferrer" className='mr-10'>
             <img src={twitter} />
-            </a>
+          </a>
+          <a href='https://www.youtube.com/@soymildredsilva' target="_blank" rel="noopener noreferrer">
+            <img src={youtube} className='youtube'/>
+          </a>
         </div>
       </div>
       <div className='profile-picture'>

@@ -1,0 +1,92 @@
+@use '../../assets/styles/utilities';
+
+.testimonial-wrap {
+  width: 100%;
+  border-radius: 10px;
+  background-color: utilities.$blueGray;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  .quotes {
+    width: 50px;
+  }
+
+  .colleague-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .name {
+    font-family: 'Poppins-Medium';
+    margin: 0;
+  }
+
+  .position {
+    margin: 0;
+    font-size: 13px;
+    color: utilities.$gray
+  }
+
+  .testimonial {
+    line-height: 1.1;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .images {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .text {
+    height: 140px;
+    margin-bottom: 10px;
+  }
+
+  .scroll {
+    overflow-y: scroll;
+  }
+
+  .cta-read {
+    color: utilities.$purple;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: utilities.$layout-breakpoint-desktop) {
+  .testimonials {
+    display: grid;
+    grid-template-areas: 'col1 col2';
+    grid-gap: 20px;
+  }
+
+  .testimonial-wrap {
+    .text {
+      height: 160px;
+    }
+  }
+}
+
+@media (min-width: utilities.$layout-breakpoint-medium) {
+  .testimonials {
+    display: grid;
+    grid-template-areas: 'col1 col2 col3';
+    grid-gap: 20px;
+  }
+
+  .testimonial-wrap {
+    .text {
+      height: 210px;
+    }
+  }
+}

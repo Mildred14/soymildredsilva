@@ -3,6 +3,16 @@
   src: url('./assets/fonts/Poppins-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('./assets/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+
 
 body {
   margin: 0;
@@ -13,6 +23,6 @@ h2, p {
   line-height: 1
 }
 
-textarea {
+textarea, button {
   font-family: 'Poppins', 'Roboto', sans-serif;
 }
