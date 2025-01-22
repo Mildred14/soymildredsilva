@@ -26,10 +26,14 @@
     }
     & > .social-media {
       text-align: center;
-      & > .instagram {
+      & > .mr-10 {
         margin-right: 10px;
       }
     }
+  }
+
+  .youtube {
+    width: 40px;
   }
 
   & > .profile-picture {
@@ -45,6 +49,9 @@
       justify-content: space-between;
       & > .social-media {
         text-align: left;
+        width: 190px;
+        height: 40px;
+        display: flex;
       }
     }
 
