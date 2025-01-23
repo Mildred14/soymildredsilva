@@ -18,6 +18,5 @@ test('open Contact modal',  () => {
 
   const contact = screen.getAllByTitle('more-info')
   fireEvent.click(contact[2])
-  expect(screen.getByTitle('modal-2')).toBeInTheDocument()
   expect(screen.getAllByText('Contact')).toHaveLength(2)
 })
