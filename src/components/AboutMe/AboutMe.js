@@ -42,7 +42,7 @@ export const AboutMe = () => {
         </div>
       </div>
       <div className='profile-picture'>
-        <img src={profilePicture} />
+        <img src={profilePicture} loading="lazy"/>
       </div>
     </div>
   )

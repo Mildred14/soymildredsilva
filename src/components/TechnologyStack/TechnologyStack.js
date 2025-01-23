@@ -52,7 +52,7 @@ export const TechnologyStack = () => {
       return (
         <div className='tech-stack'>
           <div className='tech-logo'>
-            <img src={val.logo} width='50'/>
+            <img src={val.logo} width='50' loading="lazy"/>
           </div>
           <div className='tech-info'>
             <p className='tech-name'>{val.technology}</p>

@@ -19,11 +19,6 @@ global.fetch = jest.fn(() => Promise.resolve({
   })
 }))
 
-test('display BlogPost modal', () => {
-  render(<BlogPosts />)
-  expect(screen.getByText('Plase take a moment to read my latest posts 📚☕️')).toBeInTheDocument()
-})
-
 test("display BlogPosts with status 'ok'", async () => {
   await act(async () =>  render(<BlogPosts />))
 

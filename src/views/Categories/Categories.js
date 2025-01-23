@@ -44,6 +44,7 @@ export const Categories = () => {
     },
     {
       name: 'Blog Posts',
+      modalTitle: 'Latest Blog Posts',
       img: blogPost,
     },
     {
@@ -52,6 +53,7 @@ export const Categories = () => {
     },
     {
       name: 'Testimonials',
+      modalTitle: 'References of my colleagues',
       img: reviews,
     },
   ]
@@ -72,7 +74,7 @@ export const Categories = () => {
         </div>
       </div>
       <div className="overlap" id="categories" />
-      {modalStatus && <Modal name={topCategories[categorySelected]?.name} id={categorySelected} selected={setCategorySelected} status={setModalStatus} />}
+      {modalStatus && <Modal name={topCategories[categorySelected]?.modalTitle ?? topCategories[categorySelected]?.name} id={categorySelected} selected={setCategorySelected} status={setModalStatus} />}
     </div>
   )
 }

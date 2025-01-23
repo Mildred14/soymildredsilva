@@ -37,13 +37,13 @@ export const Testimonials = () => {
 
       return (
         <div className="testimonial-wrap" key={index}>
-          <img src={Quotes} alt="quote-icon" className="quotes"/>
+          <img src={Quotes} alt="quote-icon" className="quotes" loading="lazy"/>
           <div className="text">
             <p className="testimonial" data-testid={`testimonial-${index}`}>{shortText}</p>
             <button className="cta-read" onClick={(e) => handleRead(e, testimonial, shortText)} data-testid={`btn-${index}`}>Read more</button>
           </div>
           <div className="colleague-wrap">
-            <img src={images[colleague.imgName]} className="images"/>
+            <img src={images[colleague.imgName]} className="images" loading="lazy"/>
             <div>
               <p className="name">{colleague.name}</p>
               <p className="position">{colleague.jobPosition}</p>
