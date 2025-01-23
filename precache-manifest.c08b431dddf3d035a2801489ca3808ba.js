@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71d351f974a64e404125f33247f4121d",
+    "revision": "c60aef5a2ad5a6c2a33310d7552bb2ba",
     "url": "/soymildredsilva/index.html"
   },
   {
-    "revision": "af33674c7cee4d3d99c0",
-    "url": "/soymildredsilva/static/css/main.dfed4938.chunk.css"
+    "revision": "f2b1c243676c7fbcc51a",
+    "url": "/soymildredsilva/static/css/main.26b71222.chunk.css"
   },
   {
-    "revision": "53004c27e222c64ee522",
-    "url": "/soymildredsilva/static/js/2.d799efb7.chunk.js"
+    "revision": "c66e1a0681af9381c809",
+    "url": "/soymildredsilva/static/js/2.287e6326.chunk.js"
   },
   {
     "revision": "b114cc85da504a772f040e3f40f8e46a",
-    "url": "/soymildredsilva/static/js/2.d799efb7.chunk.js.LICENSE.txt"
+    "url": "/soymildredsilva/static/js/2.287e6326.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae5dcbc7ec840d964b7a",
-    "url": "/soymildredsilva/static/js/3.129f487b.chunk.js"
+    "revision": "936271b2c02b0a871840",
+    "url": "/soymildredsilva/static/js/3.c957cf84.chunk.js"
   },
   {
-    "revision": "af33674c7cee4d3d99c0",
-    "url": "/soymildredsilva/static/js/main.f50e225b.chunk.js"
+    "revision": "f2b1c243676c7fbcc51a",
+    "url": "/soymildredsilva/static/js/main.e7b857b8.chunk.js"
   },
   {
-    "revision": "b061ae45bc1a323f3086",
-    "url": "/soymildredsilva/static/js/runtime-main.2d6f1c2d.js"
+    "revision": "e2804749962206d380b4",
+    "url": "/soymildredsilva/static/js/runtime-main.54f7a3e6.js"
   },
   {
     "revision": "9a223d8a028354713a4a4072dc19250a",
@@ -102,6 +102,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "55d83985b46d5336f45f27036b3018cd",
     "url": "/soymildredsilva/static/media/instagram.55d83985.svg"
+  },
+  {
+    "revision": "7baac7df9bfdf2097a9732244a76c411",
+    "url": "/soymildredsilva/static/media/magmalabs.7baac7df.webp"
   },
   {
     "revision": "6cbb277462365a4168fe92d1cbfa5227",

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/soymildredsilva/static/css/main.dfed4938.chunk.css",
-    "main.js": "/soymildredsilva/static/js/main.f50e225b.chunk.js",
-    "main.js.map": "/soymildredsilva/static/js/main.f50e225b.chunk.js.map",
-    "runtime-main.js": "/soymildredsilva/static/js/runtime-main.2d6f1c2d.js",
-    "runtime-main.js.map": "/soymildredsilva/static/js/runtime-main.2d6f1c2d.js.map",
-    "static/js/2.d799efb7.chunk.js": "/soymildredsilva/static/js/2.d799efb7.chunk.js",
-    "static/js/2.d799efb7.chunk.js.map": "/soymildredsilva/static/js/2.d799efb7.chunk.js.map",
-    "static/js/3.129f487b.chunk.js": "/soymildredsilva/static/js/3.129f487b.chunk.js",
-    "static/js/3.129f487b.chunk.js.map": "/soymildredsilva/static/js/3.129f487b.chunk.js.map",
+    "main.css": "/soymildredsilva/static/css/main.26b71222.chunk.css",
+    "main.js": "/soymildredsilva/static/js/main.e7b857b8.chunk.js",
+    "main.js.map": "/soymildredsilva/static/js/main.e7b857b8.chunk.js.map",
+    "runtime-main.js": "/soymildredsilva/static/js/runtime-main.54f7a3e6.js",
+    "runtime-main.js.map": "/soymildredsilva/static/js/runtime-main.54f7a3e6.js.map",
+    "static/js/2.287e6326.chunk.js": "/soymildredsilva/static/js/2.287e6326.chunk.js",
+    "static/js/2.287e6326.chunk.js.map": "/soymildredsilva/static/js/2.287e6326.chunk.js.map",
+    "static/js/3.c957cf84.chunk.js": "/soymildredsilva/static/js/3.c957cf84.chunk.js",
+    "static/js/3.c957cf84.chunk.js.map": "/soymildredsilva/static/js/3.c957cf84.chunk.js.map",
     "index.html": "/soymildredsilva/index.html",
-    "precache-manifest.061d506a776e17ec1217e42c7bc82cd2.js": "/soymildredsilva/precache-manifest.061d506a776e17ec1217e42c7bc82cd2.js",
+    "precache-manifest.c08b431dddf3d035a2801489ca3808ba.js": "/soymildredsilva/precache-manifest.c08b431dddf3d035a2801489ca3808ba.js",
     "service-worker.js": "/soymildredsilva/service-worker.js",
-    "static/css/main.dfed4938.chunk.css.map": "/soymildredsilva/static/css/main.dfed4938.chunk.css.map",
-    "static/js/2.d799efb7.chunk.js.LICENSE.txt": "/soymildredsilva/static/js/2.d799efb7.chunk.js.LICENSE.txt",
+    "static/css/main.26b71222.chunk.css.map": "/soymildredsilva/static/css/main.26b71222.chunk.css.map",
+    "static/js/2.287e6326.chunk.js.LICENSE.txt": "/soymildredsilva/static/js/2.287e6326.chunk.js.LICENSE.txt",
     "static/media/Landing.scss": "/soymildredsilva/static/media/bg-blue.5547ec5c.png",
     "static/media/index.css": "/soymildredsilva/static/media/Poppins-Regular.8b6af8e5.ttf",
     "static/media/Categories.scss": "/soymildredsilva/static/media/Poppins-Medium.f61a4eb2.ttf",
@@ -31,6 +31,7 @@
     "static/media/html.svg": "/soymildredsilva/static/media/html.1b811051.svg",
     "static/media/icon.svg": "/soymildredsilva/static/media/icon.06fe211a.svg",
     "static/media/instagram.svg": "/soymildredsilva/static/media/instagram.55d83985.svg",
+    "static/media/magmalabs.webp": "/soymildredsilva/static/media/magmalabs.7baac7df.webp",
     "static/media/mieko.jpeg": "/soymildredsilva/static/media/mieko.6cbb2774.jpeg",
     "static/media/naomi.jpeg": "/soymildredsilva/static/media/naomi.06e44eb5.jpeg",
     "static/media/plus.svg": "/soymildredsilva/static/media/plus.4a745e15.svg",
@@ -45,9 +46,9 @@
     "static/media/wade.jpeg": "/soymildredsilva/static/media/wade.5757d442.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2d6f1c2d.js",
-    "static/js/2.d799efb7.chunk.js",
-    "static/css/main.dfed4938.chunk.css",
-    "static/js/main.f50e225b.chunk.js"
+    "static/js/runtime-main.54f7a3e6.js",
+    "static/js/2.287e6326.chunk.js",
+    "static/css/main.26b71222.chunk.css",
+    "static/js/main.e7b857b8.chunk.js"
   ]
 }
