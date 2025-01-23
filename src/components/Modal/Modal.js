@@ -29,7 +29,7 @@ export const Modal = ({name, id, selected, status}) => {
   }
 
   return (
-    <div className="modal-open" id={`modal-${id}`} title={`modal-${id}`}>
+    <div className="modal-open" id={`modal-${id}`}>
       <div className="modal-header">
         <h2>{name}</h2>
         <a onClick={handleModal}>

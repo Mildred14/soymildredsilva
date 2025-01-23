@@ -28,7 +28,7 @@ export const BlogPosts = () => {
         return (
           <a href={post.link} target="_blank" rel="noopener" className="item--card" key={post.guid}>
             <div className="item--img posts-img">
-              <img src={image}/>
+              <img src={image} loading="lazy"/>
             </div>
             <div className="content post-content">
               <p className="name">{post.title}</p>
@@ -42,7 +42,6 @@ export const BlogPosts = () => {
 
   return (
     <div className="items">
-      <h3>Plase take a moment to read my latest posts 📚☕️</h3>
       {isLoading ? (<Loading/>) : displayPosts()}
     </div>
   )

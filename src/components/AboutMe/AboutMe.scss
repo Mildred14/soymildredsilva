@@ -16,12 +16,9 @@
         font-size: 24px;
       }
 
-      & > p, span {
+      & > p {
         margin: 0;
-      }
-
-      & > p > .year {
-        font-family: 'Arial';
+        line-height: 1.1;
       }
     }
     & > .social-media {

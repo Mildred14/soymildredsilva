@@ -14,10 +14,10 @@ export const Card = ({name, imgIcon, id, selected, status}) => {
   return (
     <a className={`more-info card card-${id}`} onClick={handleClick} title="more-info" key={id}>
       <div className="img-wrapper">
-        <img src={plusIcon} width="30"/>
+        <img src={plusIcon} width="30" loading="lazy"/>
       </div>
       <div>
-        <img src={imgIcon} className="img-category" />
+        <img src={imgIcon} className="img-category" loading="lazy"/>
       </div>
       <div className="title">
         <p className="category-title">

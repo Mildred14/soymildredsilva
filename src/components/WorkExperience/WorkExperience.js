@@ -3,6 +3,7 @@ import './WorkExperience.scss'
 import salesloftLogo from '../../assets/images/salesloft.png'
 import roverpassLogo from '../../assets/images/roverpass.png'
 import micheladaLogo from '../../assets/images/michelada.jpeg'
+import magmalbasLogo from '../../assets/images/magmalabs.webp'
 
 export const WorkExperience = () => {
   const experiences = [
@@ -27,6 +28,13 @@ export const WorkExperience = () => {
       jobTitle: 'Apprentice',
       link: 'https://www.michelada.io/'
     },
+    { name: "Magmalbas.io",
+      period: "Aug - Dec 2018",
+      img: magmalbasLogo,
+      description: "Software development consultant",
+      jobTitle: 'Bootcamp',
+      link: 'https://www.magmalabs.io/'
+    },
   ]
 
   const displayExperience = () => {
@@ -34,7 +42,7 @@ export const WorkExperience = () => {
       return (
         <a href={experience.link} target="_blank" rel="noopener" className="item--card">
             <div className="item--img">
-              <img src={experience?.img}/>
+              <img src={experience?.img} loading="lazy"/>
             </div>
             <div className="content">
               <p className="period">{experience.period}</p>
