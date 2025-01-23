@@ -9,6 +9,8 @@ export const Card = ({name, imgIcon, id, selected, status}) => {
     status(true)
     const categories = document.getElementById("categories")
     categories.classList.add("overlap-show")
+    const body = document.body
+    body.classList.add('no-scroll')
   }
 
   return (

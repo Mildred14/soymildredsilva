@@ -5,11 +5,12 @@ import { TechnologyStack } from "../TechnologyStack/TechnologyStack"
 import { Contact } from "../Contact/Contact"
 import { AboutMe } from "../AboutMe/AboutMe"
 import { BlogPosts } from "../BlogPosts/BlogPosts"
-import "./Modal.scss"
 import { Testimonials } from "../Testimonials/Testimonials"
+import "./Modal.scss"
 
 export const Modal = ({name, id, selected, status}) => {
   const handleModal = () => {
+    const body = document.body.classList.remove('no-scroll')
     const categories = document.getElementById("categories")
     categories.classList.remove("overlap-show")
     status(false)

@@ -2,8 +2,14 @@ import React from 'react'
 import { Categories } from '../Categories/Categories'
 import iconPaper from '../../assets/images/icon.svg'
 import'./Landing.scss'
+import { useCounter } from './useCounter'
 
 export const Landing = () => {
+  const companieCounter = useCounter(4, 400)
+  const projectsCounter = useCounter(6, 350)
+  const yearsExperienceCounter = useCounter(5, 300)
+  const usersCounter = useCounter(150000, 20)
+
   return (
     <>
       <div className='landing-page'>
@@ -21,21 +27,21 @@ export const Landing = () => {
           <div className='wrap-data'>
             <div className='data'>
               <div>
-                <p className='value'>4</p>
+                <p className='value'>{companieCounter}</p>
                 <p className='datum'>companies</p>
               </div>
               <div>
-                <p className='value'>6</p>
+                <p className='value'>{projectsCounter}</p>
                 <p className='datum'>big projects</p>
               </div>
             </div>
             <div className='data'>
               <div>
-                <p className='value'>5</p>
+                <p className='value'>{yearsExperienceCounter}</p>
                 <p className='datum'>years experience</p>
               </div>
               <div>
-                <p className='value'>+150k</p>
+                <p className='value'>+{usersCounter}K</p>
                 <p className='datum'>users satisfied</p>
               </div>
             </div>
