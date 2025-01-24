@@ -14,7 +14,7 @@ export const Card = ({name, imgIcon, id, selected, status}) => {
   }
 
   return (
-    <a className={`more-info card card-${id}`} onClick={handleClick} title="more-info" key={id}>
+    <a className={`more-info card card-${id}`} onClick={handleClick} key={id}>
       <div className="img-wrapper">
         <img src={plusIcon} width="30" loading="lazy"/>
       </div>

@@ -16,7 +16,7 @@ test('display all categories',  () => {
 test('open Contact modal',  () => {
   render(<Categories />)
 
-  const contact = screen.getAllByTitle('more-info')
-  fireEvent.click(contact[2])
+  const contact = screen.getAllByText('Contact')
+  fireEvent.click(contact[0])
   expect(screen.getAllByText('Contact')).toHaveLength(2)
 })
