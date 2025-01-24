@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen, act } from '@testing-library/react'
+import { render, screen, act, cleanup } from '@testing-library/react'
 import { BlogPosts } from '../BlogPosts'
 
 const mockResponse = {
@@ -13,14 +13,18 @@ const mockResponse = {
   ]
 }
 
-global.fetch = jest.fn(() => Promise.resolve({
-  json: () => Promise.resolve({
-    ...mockResponse
-  })
-}))
+afterEach(cleanup)
 
 test("display BlogPosts with status 'ok'", async () => {
-  await act(async () =>  render(<BlogPosts />))
+  jest.spyOn(global, 'fetch')
+  .mockImplementation(() => Promise.resolve({
+    status: 200,
+    json: () => Promise.resolve({
+      ...mockResponse
+    })
+  }))
+
+  await act(async () => render(<BlogPosts />))
 
   expect(screen.getByText('This is the title of the Post')).toBeInTheDocument()
   expect(screen.getByText('hello there, this is a post…')).toBeInTheDocument()

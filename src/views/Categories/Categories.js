@@ -59,7 +59,7 @@ export const Categories = () => {
   ]
   const showCategories = () => {
     return topCategories.map((category, index) => {
-      return (<Card name={category.name} imgIcon={category.img} id={index} selected={setCategorySelected} status={setModalStatus} />)
+      return (<Card key={index} name={category.name} imgIcon={category.img} id={index} selected={setCategorySelected} status={setModalStatus} />)
     })
   }
 

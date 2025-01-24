@@ -48,9 +48,9 @@ export const TechnologyStack = () => {
   ]
 
   const displayStack = () => {
-    return stack.map((val) => {
+    return stack.map((val, index) => {
       return (
-        <div className='tech-stack'>
+        <div className='tech-stack' key={index}>
           <div className='tech-logo'>
             <img src={val.logo} width='50' loading="lazy"/>
           </div>
