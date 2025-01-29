@@ -40,7 +40,7 @@ export const WorkExperience = () => {
   const displayExperience = () => {
     return experiences.map((experience, index) => {
       return (
-        <a href={experience.link} target="_blank" rel="noopener" className="item--card" key={index}>
+        <a href={experience.link} target="_blank" rel="noopener noreferrer" className="item--card" key={index}>
             <div className="item--img">
               <img src={experience?.img} loading="lazy"/>
             </div>
@@ -58,7 +58,7 @@ export const WorkExperience = () => {
   return (
     <div className="items">
       {displayExperience()}
-      <h2 className="github">No worries, there's more in <a href="https://github.com/Mildred14" target="_blank" rel="noopener" className="github-link">GitHub</a></h2>
+      <h2 className="github">No worries, there's more in <a href="https://github.com/Mildred14" target="_blank" rel="noopener noreferrer" className="github-link">GitHub</a></h2>
     </div>
   )
 }
