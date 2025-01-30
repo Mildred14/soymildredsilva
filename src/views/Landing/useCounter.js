@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 export const useCounter = (maxNumber, delay) => {
-  const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(1)
   let counting = 0
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export const useCounter = (maxNumber, delay) => {
           clearInterval(interval)
         }
       }, delay)
-    }, 1800);
+    }, 50);
   }, [])
 
   return counter

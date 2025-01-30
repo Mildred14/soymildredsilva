@@ -1,11 +1,10 @@
 import React from 'react'
-import { Categories } from '../Categories/Categories'
 import iconPaper from '../../assets/images/icon.svg'
 import'./Landing.scss'
 import { useCounter } from './useCounter'
 
 export const Landing = () => {
-  const companieCounter = useCounter(4, 400)
+  const companieCounter = useCounter(4, 200)
   const projectsCounter = useCounter(6, 350)
   const yearsExperienceCounter = useCounter(5, 300)
   const usersCounter = useCounter(150000, 20)
@@ -48,7 +47,6 @@ export const Landing = () => {
           </div>
         </div>
       </div>
-      <Categories />
     </>
   )
 }

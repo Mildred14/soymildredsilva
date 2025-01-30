@@ -1,4 +1,3 @@
-import icon from '../../assets/images/icon-white.svg'
 import './Intro.scss'
 
 export const Intro = () => {
