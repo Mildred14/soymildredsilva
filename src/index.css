@@ -17,6 +17,7 @@
 body {
   margin: 0;
   font-family: 'Poppins', 'Roboto', sans-serif;
+  position: relative;
 }
 
 h2, p {

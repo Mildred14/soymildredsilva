@@ -16,8 +16,10 @@ export const Categories = () => {
 
   useEffect(() => {
     document.addEventListener('scroll', () => {
-      const rect = elementCardsRef.current.getBoundingClientRect()
-      const rectTitle = titleRef.current.getBoundingClientRect()
+      if(!elementCardsRef.current) return
+      if(!titleRef.current) return
+      const rect = elementCardsRef?.current.getBoundingClientRect()
+      const rectTitle = titleRef?.current.getBoundingClientRect()
 
       const animationClass = 'smooth-categories'
       if (rectTitle.top <= window.innerHeight  && rectTitle.bottom >= 0) {

@@ -1,0 +1,58 @@
+@use '../../assets/styles/utilities';
+
+.intro {
+  background-image: linear-gradient(utilities.$purple, utilities.$blue);
+  height: 100vh;
+  transform: translate(0, -1000px);
+  display: grid;
+  place-content: center;
+  animation: intro-bg 2700ms ease-in-out forwards;
+  position: absolute;
+  width: 100vw;
+  z-index: 1000;
+
+  .icon {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "LS-Bold";
+    color: utilities.$white;
+    animation: intro 2500ms ease-in-out forwards;
+  }
+}
+
+@keyframes intro {
+  0% {
+    opacity: 1;
+    transform: translate(0, 10px);
+  }
+  15% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, 10px);
+  }
+  45% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: translate(0, 10px);
+  }
+  75% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(0, 10px);
+  }
+  100%{
+    transform: translate(0, -1000px);
+  }
+}
+
+@keyframes intro-bg {
+  0%, 70% {
+    transform: translate(0, 0);
+  }
+  100%{
+    transform: translate(0, -1000px);
+  }
+}
