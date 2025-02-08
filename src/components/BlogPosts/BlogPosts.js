@@ -26,7 +26,7 @@ export const BlogPosts = () => {
         const shortDescription = description.substr(0, 250) + "\u2026";
 
         return (
-          <a href={post.link} target="_blank" rel="noopener" className="item--card" key={post.guid}>
+          <a href={post.link} target="_blank" rel="noopener noreferrer" className="item--card" key={post.guid}>
             <div className="item--img posts-img">
               <img src={image} loading="lazy"/>
             </div>
